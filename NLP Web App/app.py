@@ -27,7 +27,6 @@ def Summarize():
             "parameters": {"min_length": minL, "max_length": maxL},
         })
 
-        # Check if the output contains the expected data
         if isinstance(output, list) and "summary_text" in output[0]:
             summary = output[0]["summary_text"]
         else:
